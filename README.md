@@ -16,9 +16,7 @@
 ## Features
 ### - Login System:
 ![Main Page Login](/images/login_page.PNG)
-![Login Student](/images/student_login.PNG)
-![Login Teacher](/images/teacher_login.PNG)
-![Login Tutor](/images/tutor_login.PNG)
+![Login Student](/images/student_login.PNG) ![Login Teacher](/images/teacher_login.PNG) ![Login Tutor](/images/tutor_login.PNG)
 
 ### - Main Menu:
 ![Main Menu](/images/main_page.PNG)
@@ -31,5 +29,5 @@
 ![Manage Student](/images/manage_student.PNG)
 ![List Students](/images/student_listing.PNG)
   
-![Databases](/images/student_listing.PNG)
+![Databases](/images/database.PNG)
 
