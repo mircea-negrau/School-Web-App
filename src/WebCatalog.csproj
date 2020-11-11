@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminlogin.aspx" />
     <Content Include="ajax\js\jquery.min.js" />
     <Content Include="ajax\js\jquery.slim.js" />
     <Content Include="bootstrap\js\bootstrap.bundle.min.js" />
@@ -7985,7 +7986,6 @@
     <Content Include="images\teacher.png" />
     <Content Include="images\student.png" />
     <Content Include="register.aspx" />
-    <Content Include="admin_login.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery-3.4.1.slim.min.js" />
@@ -9641,6 +9641,13 @@
     <Content Include="profile.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminlogin.aspx.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminlogin.aspx.designer.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="student.aspx.cs">
       <DependentUpon>student.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -9717,13 +9724,6 @@
     </Compile>
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="admin_login.aspx.cs">
-      <DependentUpon>admin_login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin_login.aspx.designer.cs">
-      <DependentUpon>admin_login.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>

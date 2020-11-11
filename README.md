@@ -1,6 +1,6 @@
 # High School Project for receiving Programming Diploma
 ## Overview
-- Programming language: C# (ASP.NET Web Application .NET Framework); 
+- Programming language: C#, CSS (ASP.NET Web Application .NET Framework); 
 - Libraries: Bootstrap, datatables, fontawesome;
 - Database: Microsoft SQL;
 - Deadline: 4 weeks;
@@ -15,10 +15,21 @@
 
 ## Features
 ### - Login System:
-![Login](/images/login.PNG)
+![Main Page Login](/images/login_page.PNG)
+![Login Student](/images/student_login.PNG)
+![Login Teacher](/images/teacher_login.PNG)
+![Login Tutor](/images/tutor_login.PNG)
 
 ### - Main Menu:
-![Main Menu](/images/main_menu.PNG)
-  - Tooltip in the Main Menu (mouse hover-over);
-  - Fully integrated error messages throughout the whole program.
+![Main Menu](/images/main_page.PNG)
+
+![Main Page Teachers](/images/teacher_main_page.PNG)
+![List Classes](/images/classes_list.PNG)
+
+![Register Student](/images/student_registration.PNG)
+![Student Information](/images/student_information.PNG)
+![Manage Student](/images/manage_student.PNG)
+![List Students](/images/student_listing.PNG)
+  
+![Databases](/images/student_listing.PNG)
 
