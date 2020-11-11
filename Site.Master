@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebCatalog.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>AnyDesk</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
+
+    <%--bootstrap css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--datatables css--%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--fontawesome-premium css--%>
+    <link href="fontawesome-premium/css/all.css" rel="stylesheet" />
+
+    <%--custom css --%>
+    <link href="css/Custom.css" rel="stylesheet" />
+
+    <%--jquery--%>
+    <script src="bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="ajax/js/jquery.min.js"></script>
+    <script src="ajax/js/jquery.slim.js"></script>
+    <%--popper js--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%--bootstrap js--%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <%--datatables js--%>
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #3185FC">
+                <a class="navbar-brand" style="color: #ffffff" href="homepage.aspx">
+                    <img src="images/books.png" width="30" height="30" />
+                    WebCatalog
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" style="color: #ffffff" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButtonOwnInformation" runat="server" Style="color: #ffffff" href="student.aspx" Visible="False">Your information</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButtonOwnClassroom" runat="server" Style="color: #ffffff" href="#" Visible="False">Your classroom</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButtonCoordinatingClassroom" runat="server" Style="color: #ffffff" href="#" Visible="False">Coordinating</asp:LinkButton>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <asp:LinkButton class="nav-link dropdown-toggle" Style="color: #ffffff" runat="server" Visible="false" href="#" ID="LinkButtonDropDownClassroom" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Classrooms
+                            </asp:LinkButton>
+                            <div class="dropdown-menu" aria-labelledby="LinkButtonDropDownClassroom">
+                                <a class="dropdown-item" href="highschool.aspx">High School</a>
+                                <a class="dropdown-item" href="middleschool.aspx">Middle School</a>
+                                <a class="dropdown-item" href="primaryschool.aspx">Primary School</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Contest</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" href="login.aspx" Style="color: #ffffff" ID="LinkButtonLogin" runat="server">Login</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButtonLogout" Style="color: #ffffff" runat="server" Visible="False" OnClick="LinkButtonLogout_Click">Logout</asp:LinkButton>
+                            <!-- </li>
+                      <li class="nav-item active">
+                          <asp:LinkButton class="nav-link" ID="LinkButtonHelloStudent" style="color: #ffffff" runat="server" Visible="False">Hello, student!</asp:LinkButton>
+                  </li> -->
+                            <li class="nav-item active">
+                                <asp:LinkButton class="nav-link" ID="LinkButtonHelloTeacher" Style="color: #ffffff" runat="server" Visible="False">Hello, teacher!</asp:LinkButton>
+                            </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButtonHelloTutor" Style="color: #ffffff" runat="server" Visible="False">Hello, tutor!</asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Main Content Placeholder -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Main Content Placeholder -->
+
+        <!-- Footer -->
+        <footer>
+            <div id="footer2" class="footer">
+                <p>
+                    <asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">WebCatalog ©</asp:LinkButton>
+                    &nbsp;
+                                <asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server">All right reserved.</asp:LinkButton>
+                    &nbsp;
+                                <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">2020</asp:LinkButton>
+                </p>
+            </div>
+        </footer>
+        <!-- ./Footer -->
+    </form>
+</body>
+</html>
